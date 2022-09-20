@@ -1,3 +1,76 @@
-.nav-items li{display:inline-block}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFjLG9CQUFvQiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubmF2LWl0ZW1zIGxpe2Rpc3BsYXk6aW5saW5lLWJsb2NrfVxuIl19 */
+.btn {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-weight: bold;
+  transition: color, background-color 0.6s;
+}
+
+.btn-1 {
+  color: #fff;
+  background-color: gold;
+}
+
+.btn-1:hover {
+  background-color: black;
+  color: gold;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 0 8%;
+  background-image: url(/images/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header nav .nav-brand {
+  font-size: 36px;
+  color: gold;
+  font-family: "Dancing Script", cursive;
+}
+.header nav .nav-links {
+  padding: 28px 0;
+  text-transform: uppercase;
+}
+.header nav .nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.header nav .nav-links li a {
+  text-decoration: none;
+  padding: 5px 0;
+  color: #fff;
+  transition: color 0.5s;
+}
+.header nav .nav-links li a:hover {
+  color: gold;
+}
+.header .header-text {
+  text-align: center;
+  margin-top: 50%;
+}
+.header .header-text p {
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+}
+.header .header-text h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */

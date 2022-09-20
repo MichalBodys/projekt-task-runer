@@ -1,7 +1,92 @@
+$main-color: gold;
+$font-bright: #fff;
+$font-dark: black;
 
-.nav-items{
-    li{
-        display: inline-block;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ .btn{
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+    transition: color ,background-color .6s;
+}
+ .btn-1{
+    color: $font-bright;
+    background-color: $main-color;
+ }
+ .btn-1:hover{
+    background-color: $font-dark;
+    color:$main-color ;
+ }
+
+// Header
+
+.header {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	padding: 0 8%;
+	background-image: url(/images/hero-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	// NAV
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.nav-brand {
+			font-size: 36px;
+			color:$main-color;
+			font-family: "Dancing Script", cursive;
+		}
+
+		.nav-links {
+			padding: 28px 0;
+			text-transform: uppercase;
+
+			li {
+				display: inline-block;
+				margin: 0 15px;
+
+				a {
+					text-decoration: none;
+					padding: 5px 0;
+					color:$font-bright;
+					transition: color 0.5s;
+				}
+
+				a:hover {
+					color: $main-color;
+				}
+			}
+		}
+	}
+
+
+    .header-text{
+        text-align: center;
+        margin-top: 50%;
+
+        p{
+            font-family: 'Great Vibes', cursive;
+            font-size: 36px;
+        }
+        h2{
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
 
     }
+
+
 }
