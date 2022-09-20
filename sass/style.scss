@@ -216,3 +216,10 @@ footer {
 	.nav-links {
 		display: none;
 	}}
+    @media (min-width: 768px) {
+        .burger-icon {
+            display: none;
+        }
+        .nav-links {
+            display: inline-block;
+        }}
