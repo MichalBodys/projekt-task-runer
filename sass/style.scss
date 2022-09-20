@@ -8,27 +8,43 @@ $font-dark: black;
 	box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+	font-family: "Roboto", sans-serif;
 }
 
- .btn{
-    width: 150px;
-    height: 50px;
-    text-transform: uppercase;
-    border-radius: 5px;
-    border: 1px solid black;
-    font-weight: bold;
-    transition: color ,background-color .6s;
+.btn {
+	width: 150px;
+	height: 50px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	border: 1px solid black;
+	font-weight: bold;
+	transition: color, background-color 0.6s;
 }
- .btn-1{
-    color: $font-bright;
-    background-color: $main-color;
- }
- .btn-1:hover{
-    background-color: $font-dark;
-    color:$main-color ;
- }
+.btn-1 {
+	color: $font-bright;
+	background-color: $main-color;
+}
+.btn-1:hover {
+	background-color: $font-dark;
+	color: $main-color;
+}
+
+.title {
+	margin: 25px auto;
+	text-align: center;
+
+	.section-title {
+		font-size: 35px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.section-subtitle {
+		font-weight: 300;
+		font-style: italic;
+	}
+}
 
 // Header
 
@@ -50,7 +66,7 @@ body{
 
 		.nav-brand {
 			font-size: 36px;
-			color:$main-color;
+			color: $main-color;
 			font-family: "Dancing Script", cursive;
 		}
 
@@ -65,7 +81,7 @@ body{
 				a {
 					text-decoration: none;
 					padding: 5px 0;
-					color:$font-bright;
+					color: $font-bright;
 					transition: color 0.5s;
 				}
 
@@ -76,73 +92,75 @@ body{
 		}
 	}
 
+	.header-text {
+		text-align: center;
+		margin-top: 30%;
 
-    .header-text{
-        text-align: center;
-        margin-top: 50%;
-
-        p{
-            font-family: 'Great Vibes', cursive;
-            font-size: 36px;
-        }
-        h2{
-            font-size: 48px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-    }
-
-
+		p {
+			font-family: "Great Vibes", cursive;
+			font-size: 36px;
+		}
+		h2 {
+			font-size: 48px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
 }
 
 // SERVICES
-.services{
-    margin: 50px;
+.services {
+	margin: 50px;
 
-    .title{
-        margin:25px auto;
-        text-align: center;
+	.container {
+		margin-top: 50px;
 
-        .section-title{
-            font-size: 35px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
+		.service-box {
+			text-align: center;
+			padding: 15px;
 
-        .section-subtitle{
-            font-weight: 300;
-            font-style: italic;
-        }
-    }
+			.box-title {
+				margin-bottom: 10px;
+			}
 
-    .container{
-        margin: 50px;
+			.fa-solid {
+				margin-bottom: 20px;
+				font-size: 30px;
+				line-height: 70px;
+				border-radius: 50%;
+				color: $main-color;
+				width: 70px;
+				height: 70px;
+				border: solid 2px $main-color;
+			}
 
-        .service-box{
-            text-align: center;
-            padding: 15px;
+			p {
+				font-weight: 300;
+			}
+		}
+	}
+}
 
-            .box-title{
-                margin-bottom: 10px;
-            }
+// Portfolio
+.portfolio {
+	background-color: rgb(232, 235, 235);
 
-            .fa-solid{
-                margin-bottom: 20px;
-                font-size: 30px;
-                line-height: 70px;
-                border-radius: 50%;
-                color: $main-color;
-                width: 70px;
-                height: 70px;
-                border: solid 2px $main-color;
-            }
+img{
+    width:100%;
+}
 
-            p{
-                font-weight: 300;
-            }
-        }
+	.content-wrapper {
+		.card {
+			.text-box {
+				padding: 20px;
+				text-align: center;
+				background-color: #fff;
 
-    }
-
+				p {
+					font-style: italic;
+					font-weight: 300;
+				}
+			}
+		}
+	}
 }
