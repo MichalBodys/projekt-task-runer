@@ -62,6 +62,12 @@ body {
   color: gold;
   font-family: "Dancing Script", cursive;
 }
+.header nav .burger-icon {
+  background-color: inherit;
+  padding: 15px;
+  border: none;
+  font-size: 25px;
+}
 .header nav .nav-links {
   padding: 28px 0;
   text-transform: uppercase;
@@ -163,4 +169,13 @@ footer .container li a {
   color: black;
   background-color: #fff;
   font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .burger-icon {
+    display: inline-block;
+  }
+  .nav-links {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

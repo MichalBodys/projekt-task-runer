@@ -70,6 +70,14 @@ body {
 			font-family: "Dancing Script", cursive;
 		}
 
+        .burger-icon{
+            background-color: inherit;
+            padding: 15px;
+            border: none;
+            font-size: 25px;
+        }
+
+
 		.nav-links {
 			padding: 28px 0;
 			text-transform: uppercase;
@@ -201,3 +209,10 @@ footer {
 	}
 }
 
+@media (max-width: 768px) {
+	.burger-icon {
+		display: inline-block;
+	}
+	.nav-links {
+		display: none;
+	}}
