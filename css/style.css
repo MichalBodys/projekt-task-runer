@@ -121,6 +121,7 @@ body {
 }
 
 .portfolio {
+  padding: 50px;
   background-color: rgb(232, 235, 235);
 }
 .portfolio img {
